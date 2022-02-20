@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Wrought</title>
+    <meta name="description" content="Simple landing page" />
+    <meta name="keywords" content="Wrought WebAssembly programming compile compiler " />
+    <meta name="author" content="Kyle B." />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
+    <!--Nav-->
+    <nav id="header" class="w-full z-30 top-0 text-white">
+      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="w-full flex-grow flex items-center w-auto mt-2 mt-0 bg-transparent text-black p-0 z-20" id="nav-content">
+          <ul class="list-reset flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a class="inline-block py-2 px-4 text-white font-bold no-underline" href="#">Home</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Docs</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Hero-->
+    <div class="p-24">
+        <div class="mx-auto max-w-sm">
+            <h1 class="page-title">
+                Wrought
+            </h1>
+            <p class="text-center text-2xl leading-normal mb-8">
+                A convenient programming language representation for WebAssembly
+            </p>
+        </div>
+    </div>
+    <div class="relative -mt-12 lg:-mt-24">
+        <svg preserveAspectRatio="none" version="1.1" viewBox="0 0 1428 86" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                <g transform="matrix(1 0 0 .5 0 -3.2836)" fill="#fff">
+                <g transform="translate(-2,44)">
+                <path d="m0 0c90.728 0.92753 147.91 27.188 291.91 59.912 95.998 21.816 251.69 29.423 467.09 22.821-289.66 73.522-542.66 70.935-759-7.7594" opacity=".1"/>
+                <path d="m100 104.71c177.41-32.474 326.15-52.184 446.2-59.13 120.06-6.946 264.32-3.7808 432.8 9.4955-47.93 1.0483-168.7 19.771-362.3 56.169-193.6 36.398-365.84 34.219-516.7-6.5347z" opacity=".1"/>
+                <path d="m1046 51.652c84.83-22.323 233.08-34.044 393-11.486v79.834c-167.83-42.056-298.83-64.839-393-68.348z" opacity=".2"/>
+                </g>
+                <g transform="translate(-4,76)">
+                <path d="m0.457 34.035c56.629 19.163 97.751 31.774 123.36 37.83 57.632 13.63 110.47 18.425 148.21 21.594 39.322 3.3 124.6 2.342 188.99-1.796 25.735-1.653 57.702-5.291 95.901-10.911 38.821-6.156 65.446-10.744 79.873-13.761 27.114-5.667 75.702-17.488 90.806-20.863 52.865-11.811 91.234-23.596 128.72-30.224 66.365-11.735 99.352-13.382 154.86-15.472 49.52 1.045 86.205 2.697 110.05 4.955 40.467 3.832 87.385 12.434 114.16 16.917 50.455 8.444 118.95 25.128 205.49 50.05l0.305 31.998-1440.1-0.321z"/>
+                </g>
+            </g>
+        </svg>
+    </div>
+    <section class="bg-white py-8">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12 text-gray-800">
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Features
+        </h1>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div class="text-2xl mx-auto content-center">
+            <ul class="list-disc">
+                <li>Compiles quickly and deterministically</li>
+                <li>Bridges the WASM explainability gap</li>
+                <li>Will enable decompilation of WASM modules</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-100 py-8">
+      <div class="mx-auto text-gray-800">
+        <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+          Examples
+        </h1>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div class="prose text-2xl">
+            <p>Wrought allows you to write easy to understand code that compiles directly to WebAssembly. This simple minimum function example compiles deterministically to WAT/WASM.</p>
+        </div>
+        <div class="columns">
+            <div class="snippet">
+<code>export fn min(left: u32, right: u32) -> u32 {
+    if left < right {
+        return left;
+    }
+    return right;
+}</code>
+            </div>
+            <div class="snippet">
+<code>(module
+    (func $F0 (param $L0 i32) (param $L1 i32) (result i32)
+        (i32.lt_u (local.get $L0) (local.get $L1))
+        (if
+            (then
+                (return (local.get $L0))
+            )
+        )
+        (return (local.get $L1))
+    )
+    (export "min" (func $F0))
+)</code>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Change the colour #f8fafc to match the previous section colour -->
+    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+          <g class="wave" fill="#f3f4f6">
+            <path
+              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+            ></path>
+          </g>
+          <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+            <g transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) ">
+              <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+              <path
+                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                opacity="0.100000001"
+              ></path>
+              <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" opacity="0.200000003"></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <section class="container mx-auto text-center py-6 mb-12">
+      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+        Join Our Community!
+      </h1>
+      <div class="w-full mb-4">
+        <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+      </div>
+      <h3 class="my-4 text-3xl leading-tight">
+        We have a Discord for users and contributors
+      </h3>
+      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        Join!
+      </button>
+    </section>
+  </body>
+</html>
