@@ -1,0 +1,93 @@
+@import 'responsive';
+
+.gradient {
+    background: linear-gradient(90deg, #5a202c 0%, #0F172A 100%);
+}
+
+.page-title {
+    text-align: center;
+    font-weight: 700;
+
+    @include small {
+        font-size: 48px;
+        line-height: 60px;
+    }
+    @include medium {
+        font-size: 72px;
+        line-height: 90px;
+    }
+    @include large {
+        font-size: 96px;
+        line-height: 120px;
+    }
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+
+    @include small {
+        padding-left: 8px;
+        padding-right: 8px;
+        width: 100%;
+    }
+    @include medium {
+        width: 600px;
+    }
+    @include large {
+        width: 800px;
+    }
+}
+
+.columns-2 {
+    @include small {
+        padding-left: 8px;
+        padding-right: 8px;
+        display: flex;
+        flex-direction: column;
+
+        div:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    @include medium {
+        padding-left: 8px;
+        padding-right: 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 8px;
+
+        div {
+            width: 100%;
+        }
+    }
+
+    @include large {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 512px 512px;
+        column-gap: 16px;
+    }
+}
+
+.snippet {
+    overflow: auto;
+    padding: 4px 4px 4px 16px;
+    background-color: rgba(229,231,235);
+    border: 1px solid #ddd;
+    border-left: 3px solid #5a202c;
+    color: #333;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 100%;
+    overflow: auto;
+    display: block;
+    word-wrap: break-word;
+}
+.snippet > code {
+    white-space: pre;
+    font-family: "Courier New" Courier monospace;
+}

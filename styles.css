@@ -1,102 +1,104 @@
 .gradient {
-    background: linear-gradient(90deg, #5a202c 0%, #0F172A 100%);
+  background: linear-gradient(90deg, #5a202c 0%, #0F172A 100%);
 }
 
 .page-title {
-    text-align: center;
-    font-weight: 700;
+  text-align: center;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .page-title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .page-title {
+    font-size: 72px;
+    line-height: 90px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .page-title {
+    font-size: 96px;
+    line-height: 120px;
+  }
 }
 
-.prose {
-    margin-left: auto;
-    margin-right: auto;
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 768px) {
+  .content {
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .content {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .columns-2 {
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .columns-2 div:not(:last-child) {
     margin-bottom: 8px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .columns-2 {
+    padding-left: 8px;
+    padding-right: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+  }
+  .columns-2 div {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .columns-2 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 512px 512px;
+    column-gap: 16px;
+  }
 }
 
 .snippet {
-    overflow: auto;
-    padding: 4px 4px 4px 16px;
-    background-color: rgba(229,231,235);
-    border: 1px solid #ddd;
-    border-left: 3px solid #5a202c;
-    color: #333;
-    font-family: monospace;
-    font-size: 15px;
-    line-height: 1.6;
-    max-width: 100%;
-    overflow: auto;
-    display: block;
-    word-wrap: break-word;
+  overflow: auto;
+  padding: 4px 4px 4px 16px;
+  background-color: #e5e7eb;
+  border: 1px solid #ddd;
+  border-left: 3px solid #5a202c;
+  color: #333;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 100%;
+  overflow: auto;
+  display: block;
+  word-wrap: break-word;
 }
+
 .snippet > code {
-    white-space: pre;
-    font-family: "Courier New" Courier monospace;
+  white-space: pre;
+  font-family: "Courier New" Courier monospace;
 }
 
-/* Small */
-@media screen and (max-width: 768px) {
-    .page-title {
-        font-size: 48px;
-        line-height: 60px;
-    }
-
-    .prose {
-        padding-left: 8px;
-        padding-right: 8px;
-        width: 100%;
-    }
-
-    .columns {
-        padding-left: 8px;
-        padding-right: 8px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .columns > div:not(:last-child) {
-        margin-bottom: 8px;
-    }
-}
-
-/* Medium */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .page-title {
-        font-size: 72px;
-        line-height: 90px;
-    }
-
-    .prose {
-        width: 600px;
-    }
-
-    .columns {
-        padding-left: 8px;
-        padding-right: 8px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 8px;
-    }
-
-    .columns > div {
-        width: 100%;
-    }
-}
-
-/* Large */
-@media screen and (min-width: 1024px) {
-    .page-title {
-        font-size: 96px;
-        line-height: 120px;
-    }
-
-    .prose {
-        width: 800px;
-    }
-
-    .columns {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 512px 512px;
-        column-gap: 16px;
-    }
-}
+/*# sourceMappingURL=styles.css.map */
